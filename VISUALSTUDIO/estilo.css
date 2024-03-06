@@ -1,0 +1,16 @@
+.login {
+    text-align: center;
+    background-color: black;
+    color: aliceblue;
+    padding: 6px;
+    width: 3em;
+    position: absolute;
+    right: 20px;
+}
+h1 {
+    margin-bottom: 1%;
+}
+h2 {
+    font-size: small;
+    margin-bottom: 20px;
+}
