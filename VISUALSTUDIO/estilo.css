@@ -6,6 +6,15 @@
     width: 3em;
     position: absolute;
     right: 20px;
+    margin-top: -5em;
+    border-radius: 3px;
+}
+.login a {
+    text-decoration: none;
+    color: aliceblue;
+}
+.login a:visited {
+    color: aqua;
 }
 h1 {
     margin-bottom: 1%;
@@ -13,4 +22,11 @@ h1 {
 h2 {
     font-size: small;
     margin-bottom: 20px;
+}
+footer p {
+    position: absolute;
+    margin-bottom: 4px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%); /* Ajuste para centralizar completamente */
 }
