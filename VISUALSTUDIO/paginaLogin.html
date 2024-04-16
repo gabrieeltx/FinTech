@@ -4,20 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login - FinTech</title>
+    <link rel="stylesheet" href="estilo/estiloLogin.css">
 </head>
 <body>
     <header>
+        <div class="titulo">
+            <h1 id="h1Titulo">Fintech</h1>
+            <h2 id="h2Titulo">Gerenciador de finanças pessoal</h2>
+        </div>
         <div class="conteinerLogin">
-            <p>Seja Bem Vindo De Volta!</p>
+            <img class="logo" src="logo/logo.png" alt="logo">
+            <h2><strong>Acesse sua conta</strong></h2>
             <form action="login" method="post">
-                <label for="Email">Email:</label>
-                <input type="text" id="email" name="email" required><br>
-                <label for="Senha">Senha:</label>
-                <input type="text" id="senha" name="senha" required>
-                <button type="submit">Login</button>
-
-                <p><a href="">Esqueceu a senha?</a></p>
-                <p>Não possui conta? <a href="paginaCadastro.html">Cadastre-se</a></p>
+                <label for="Email"></label>
+                <input type="text" id="email" name="email" required placeholder="Email"><br>
+                <label for="Senha"></label>
+                <input type="text" id="senha" name="senha" required placeholder="Senha"><br><br>
+                <label class="checkmark" type="checkbox"></label>
+                <input type="checkbox" class="checkmark">Manter-me conectado<br><br>
+                <button class="botaoLogin" type="submit">Fazer Login</button>
+                <div class="link">
+                    <p><a href="">Esqueci minha senha</a></p>
+                    <p><a href="paginaCadastro.html">Criar nova conta</a></p>
+                </div>
             </form>
         </div>
     </header>
@@ -25,7 +34,12 @@
 
     </main>
     <footer>
-
+        <div id="rodape">
+            <a class="rodape" href="">QUEM SOMOS</a> &nbsp; 
+            <a class="rodape" href="">POLÍTICA DE PRIVACIDADE</a> &nbsp; 
+            <a class="rodape" href="">TERMOS DE USO</a> &nbsp; 
+            <a class="rodape" href="https://wa.me/5571984745348" target="_blank">CONTATO</a>
+        </div>
     </footer>
 </body>
 </html>
