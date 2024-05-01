@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo/estiloform.css">
+    <title>Página de Cadastro</title>
+</head>
+<body>
+    <header>
+        <img src="logo/Header.png" alt="Logotipo FinTech">
+    </header>
+    <nav>
+
+    </nav>
+    <main>
+        <h1>Cadastre-se!</h1>
+        <form action="" method="post" autocomplete="on">
+            <p><label for="nome">Nome:</label> 
+                <input type="text" name="nome" id="nome" required size="14" autocomplete="name" placeholder="Nome completo"></p>
+
+            <p><label for="email">Email:</label> 
+                <input type="text" name="email" id="email" required size="20" autocomplete="email"></p>
+            
+            <p> <label for="data">Data de Nascimento:</label>
+                <input type="date" name="data" id="data"></p>
+
+            <p><label for="senha">Senha: </label>
+                <input type="password" name="senha" id="senha" required minlength="8" maxlength="15" size="14" placeholder="Mínimo 8 dígitos" autocomplete="new-password"></p>
+
+            <p><input id="cadastrar" type="submit" value="Cadastrar"></p>
+        </form>
+
+    </main>
+</body>
+</html>
