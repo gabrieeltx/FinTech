@@ -8,29 +8,51 @@
 </head>
 <body>
     <header>
-        <img src="logo/Header.png" alt="Logotipo FinTech">
+
     </header>
     <nav>
 
     </nav>
     <main>
-        <h1>Cadastre-se!</h1>
-        <form action="" method="post" autocomplete="on">
-            <p><label for="nome">Nome:</label> 
-                <input type="text" name="nome" id="nome" required size="14" autocomplete="name" placeholder="Nome completo"></p>
+        <div class="titulo">
+            <h1 id="h1Titulo">Fintech</h1>
+            <h2 id="h2Titulo">Gerenciador de finanças pessoal</h2>
+        </div>
+        <div class="conteinerCadastro">
+            <img class="logo" src="logo/logo.png" alt="logo">
+            <h2><strong>Cadastre-se</strong></h2>
+            <form action="login" method="post" autocomplete="on">
+                <label for="nome"></label>
+                <input type="text" id="nome" name="nome" required placeholder="Nome completo" autocomplete="name"><br>
 
-            <p><label for="email">Email:</label> 
-                <input type="text" name="email" id="email" required size="20" autocomplete="email"></p>
-            
-            <p> <label for="data">Data de Nascimento:</label>
-                <input type="date" name="data" id="data"></p>
+                <label for="Email"></label>
+                <input type="text" id="email" name="email" required placeholder="Email" autocomplete="email"><br>
 
-            <p><label for="senha">Senha: </label>
-                <input type="password" name="senha" id="senha" required minlength="8" maxlength="15" size="14" placeholder="Mínimo 8 dígitos" autocomplete="new-password"></p>
+                <label for="Senha"></label>
+                <input type="password" id="senha" name="senha" required placeholder="Senha" autocomplete="new-password"><br>
 
-            <p><input id="cadastrar" type="submit" value="Cadastrar"></p>
-        </form>
+                <label for="c"></label>
+                <input type="password" id="senha" name="senha" required placeholder="Confirmar senha"autocomplete="new-password"><br>
 
+                <div class="checkmark">
+                    <label class="checkmark" type="checkbox"></label>
+                    <input type="checkbox" class="checkmark">Concordo com as <a href="">Políticas de Privacidade</a><br>
+                    <label class="checkmark" type="checkbox"></label>
+                    <input type="checkbox" class="checkmark">Concordo com os <a href="">Termos de Uso</a><br><br>
+                </div>
+
+                <button class="botaoCadastrar" type="submit">Cadastrar</button>
+                
+            </form>
+        </div>
     </main>
+    <footer>
+        <div id="rodape">
+            <a class="rodape" href="">QUEM SOMOS</a> &nbsp; 
+            <a class="rodape" href="">POLÍTICA DE PRIVACIDADE</a> &nbsp; 
+            <a class="rodape" href="">TERMOS DE USO</a> &nbsp; 
+            <a class="rodape" href="https://wa.me/5571984745348" target="_blank">CONTATO</a>
+        </div>
+    </footer>
 </body>
 </html>

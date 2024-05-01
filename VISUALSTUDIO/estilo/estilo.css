@@ -21,8 +21,9 @@ html, body {
 
 .login {
     text-align: center;
-    background-color: rgba(0, 0, 0, 0);
-    border: 2px solid #ccc;
+    background-color: #4655a6;
+    border: 1px solid #4655a6;
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.5);
     padding: 9px;
     width: 6em;
     height: 5em fit-content;
@@ -34,12 +35,17 @@ html, body {
 .login a {
     text-decoration: none;
     color: #e4e2e3;
-}
-.login a:visited {
-    color: #e4e2e3;
-}
 
-.cadastro a {
+}
+.login:hover {
+    background-color: #35459c;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+}
+.login a:hover {
+    color: aliceblue;
+
+}
+.cadastro {
     position: absolute;
     margin-top: -4.1em;
     right: 12%;
@@ -47,12 +53,21 @@ html, body {
     height: 5em fit-content;
     border-radius: 20px;
     border: 1px solid #4655a6;
-    text-decoration: none;
-    color: #e4e2e3;
     padding: 11px;
     background-color: #4655a6;
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.5);
+} 
+.cadastro a {
+    text-decoration: none;
+    color: #e4e2e3;
 }
-
+.cadastro:hover {
+    background-color: #35459c;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+}
+.cadastro a:hover{
+    color: aliceblue;
+}
 .rodape {
     background-color: #1cbbd3;
     bottom: 0px;
