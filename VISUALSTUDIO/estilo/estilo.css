@@ -1,16 +1,62 @@
 @charset "UTF-8";
 
+:root {
+    --cor1: rgba(29, 186, 214, 1);
+    --cor2: rgba(67, 88, 167, 1);
+    --cor3: rgba(60, 132, 172, 1);
+    --corfundobranco: rgb(228, 226, 227);
+    --corletra: rgba(235, 230, 227, 1);
+}
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: "Montserrat", serif;
+}
 html, body {
-    margin: 0;
-    padding: 0;
-    background-color: #e4e2e3;
+    background-color: rgb(228, 226, 227)
+}
+main{
+
+}
+main > section{
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
+.about > h1{
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 0px;
+    background-color: rgba(67, 89, 167, 0.781);
+    width: 100vw;
+    color: var(--corletra);
+    text-shadow: 1px 1px 4px black;
+}
+.about > h2{
+    font-size: 20px;
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    width: 100vw;
+    color: var(--cor2);
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.452);
+}
+.about > p {
+    text-align: justify;
+    padding: 10px;
+    width: 90vw;
+
+}
+#burguer{
+    display: block;
+}
 .conteiner_logo {
     background-color: #1cbbd3;
     box-shadow: 1px 1px 5px #364180c5;
     width: 100vw;
-    height: 100%;
     position: relative;
     
 }
@@ -22,17 +68,16 @@ html, body {
 }
 
 .login {
+    display: block;
+    position: absolute;
     text-align: center;
     background-color: #4655a6;
     border: 1px solid #4655a6;
     box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.5);
-    padding: 9px;
-    width: 6em;
-    height: 5em fit-content;
-    position: absolute;
-    right: 20px;
-    margin-top: -4.1em;
+    padding: 10px;
     border-radius: 20px;
+    width: 30vw;
+    
 }
 .login a {
     text-decoration: none;
@@ -48,16 +93,16 @@ html, body {
 
 }
 .cadastro {
+    display: block;
     position: absolute;
-    margin-top: -4.1em;
-    right: 12%;
-    width: 7.em;
-    height: 5em fit-content;
-    border-radius: 20px;
-    border: 1px solid #4655a6;
-    padding: 11px;
+    text-align: center;
     background-color: #4655a6;
+    border: 1px solid #4655a6;
     box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 20px;
+    width: 30vw;
+
 } 
 .cadastro a {
     text-decoration: none;
@@ -71,16 +116,16 @@ html, body {
     color: aliceblue;
 }
 .rodape {
-    background-color: #1cbbd3;
+    background-color: var(--cor3);
     bottom: 0px;
     position: absolute;
     width: 100%;
-    height: 20%;
+    height: 6vh;
 }
 
 .rodape p {
+    padding-top: 10px;
     text-align: center;
-    margin-top: 5em;
     color: #e4e2e3;
 }
 
