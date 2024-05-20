@@ -16,20 +16,31 @@
 html, body {
     background-color: rgb(228, 226, 227);
 }
+
+main {
+    display: block;
+    width: 100vw;
+    height: 100vh;
+}
 main > section{
     display: block;
-    position: absolute;
+    position: relative;
+    width: 80vw;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
+.about > h1, .about > h2, .about > p {
+    width: 80vw;
+    margin-left: auto;
+    margin-right: auto;
 
+}
 .about > h1{
     font-size: 24px;
     text-align: center;
     margin-bottom: 0px;
     background-color: rgba(67, 89, 167, 0.781);
-    width: 100vw;
     color: var(--corletra);
     text-shadow: 1px 1px 4px black;
 }
@@ -38,15 +49,14 @@ main > section{
     text-align: center;
     margin-top: 0px;
     margin-bottom: 20px;
-    width: 100vw;
     color: var(--cor2);
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.452);
 }
 .about > p {
     text-align: justify;
     padding: 10px;
-    width: 90vw;
     font-size: 16px;
+    text-indent: 25px;
 }
 header {
     background-color: #1cbbd3;
@@ -54,14 +64,16 @@ header {
 }
 #burguer{
     display: block;
+    position: absolute;
     text-align: center;
-    color: var(--corletra);
-    background-color: #1cbbd3;
+    color: var(--cor2);
     cursor: pointer;
+    padding: 6px;
 }
 #burguer:hover{
-    background-color: rgba(53, 69, 156, 0.549);
-    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.164);
+    color: var(--corletra);
+    background-color: #1cbbd3;
+    border-radius: 0px 0px 6px 6px;
 }
 
 menu {
@@ -90,13 +102,13 @@ menu ul > li > a:hover {
 .conteiner_logo {
     background-color: #1cbbd3;
     position: relative;
-    
+    height: 60px;
 }
 
 .logo {
-    width: 30%;
+    max-width: 30%;
     position: relative;
-    padding-top: 5px;
+    padding-top: 10px;
 }
 
 .login {
@@ -128,7 +140,7 @@ menu ul > li > a:hover {
 .rodape {
     background-color: var(--cor3);
     bottom: 0px;
-    position: absolute;
+    position: relative;
     width: 100%;
     height: 6vh;
 }
@@ -162,6 +174,9 @@ menu ul > li > a:hover {
     #burguer {
         display: none;
     }
+    .about {
+        top: 40%;
+    }
     section.about > h1{
         font-size: 25px;
     }
@@ -176,18 +191,28 @@ menu ul > li > a:hover {
         height: 4em;
     }
     .logo {
-        width: 12em;
+        width: 16em;
         top: 5px;
         left: -10px;
 
     }
+    menu {
+        padding-top:10px;
+        text-align: center;
+    }
     .login {
         width: 15vw;
+    }
+    main > section{
+        top: 40%;
     }
 }
 @media screen and (min-width: 992px) { /*TELAS GRANDES*/
     #burguer {
         display: none;
+    }
+    .about {
+        top: 30%;
     }
     .about > h1{
         font-size: 25px;
@@ -203,10 +228,14 @@ menu ul > li > a:hover {
         height: 4em;
     }
     .logo {
-        width: 12em;
+        width: 20em;
         top: 5px;
         left: -10px;
 
+    }
+    menu {
+        padding-top:10px;
+        text-align: center;
     }
     .login {
         width: 15vw;
