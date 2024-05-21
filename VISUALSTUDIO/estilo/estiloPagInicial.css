@@ -63,6 +63,8 @@ menu > ul > li > a {
     background-color: var(--corpreto);
     color: var(--cor2);
     border-top: 1px solid var(--cordestaque1);
+    border-bottom: 0.5px solid rgba(67, 89, 167, 0.473);
+
 }
 menu ul > li > a:hover {
     color: var(--corletra);
