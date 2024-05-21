@@ -224,12 +224,15 @@ main .conteudo > p{
     }
     .logo {
         width: 20em;
-        top: 5px;
         left: -10px;
-
+        top: -10px;
     }
     .login {
         width: 15vw;
+    }
+    .conteiner_logo {
+        height: 30px;
+        
     }
     menu {
         padding-top:10px;

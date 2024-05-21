@@ -5,43 +5,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" /> <!--MENU-->
     <link rel="shortcut icon" href="logo/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="estilo/estiloIndex.css">
-    <title>Página capa</title>
+    <link rel="stylesheet" href="estilo/estiloPagInicial.css">
+    <title>Home</title>
 </head>
 <body>
     <header>
         <div class="conteiner_logo">
             <img class="logo" src="logo/logo.png" alt="logo">
         </div>
-
-        <span class="material-symbols-outlined" id="burguer" onclick="clickMenu()">
-            menu</span>
-            <menu id="itens">
-                <ul>
-                    <li><a href="index.html"><strong>Início</strong></a></li>
-                    <li><a href="paginaLogin.html"><strong>Conta</strong></a></li>
-                    <li><a href="aboutUs.html"><strong>Sobre nós</strong></a></li>
-                </ul>
-            </menu>
     
     </header>
+    <span class="material-symbols-outlined" id="conta" onclick="clickMenu()">
+        account_circle</span>
+        <menu id="itens">
+            <ul>
+                <li><a href=""><strong>Conta</strong></a></li> <!--LINK PARA O PERFIL-->
+                <li><a href="aboutUs.html"><strong>Sobre nós</strong></a></li>
+                <li><a href="index.html"><strong>Sair</strong></a></li>
+            </ul>
+        </menu>
+    <nav id="navegador">
+        <ul>
+            <li><a href=""><strong>Gerenciador</strong></a></li>
+            <li><a href=""><strong>Dicas</strong></a></li>
+        </ul>
+    </nav>
     <main>
-        <div class="login" >
-            <span><a href="paginaLogin.html"><strong>Entrar</strong></a></span>
-        </div>
-        
-        <section class="conteudo">
-            <img id="logo" src="logo/3.png" alt="">
-            <img id="nome" src="logo/nome.png" alt="logotipo"><br><br>
-            <p>Entre na sua conta ou cadastre-se gratuitamente e comece a gerenciar suas finanças agora mesmo!</p>
-        </section>
+
     </main>
     <footer>
         <div class="rodape">
             <p><strong>&copy; FinTech 2024</strong></p>
         </div>
     </footer>
-
     <script>
         function mudouTamanho(){
             if (window.innerWidth >= 768) {
@@ -58,6 +54,8 @@
                     itens.style.display = 'block'
                 }
                 }
+
+                
             </script>
 </body>
 </html>
