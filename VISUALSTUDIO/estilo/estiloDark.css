@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+* {
+    box-sizing: border-box;
+
+}
+body {
+    transition: background 0.2s linear;
+  }
+#mudarTema {
+    display: flex;
+    position: absolute;
+    text-align: center;
+    top: 90%;
+    left: 85%;
+
+}
+  body.dark {
+    background: #292c35;
+  }
+  .checkbox {
+    opacity: 0;
+    position: absolute;
+  }
+  .label {
+    background-color: #35459c;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+    border-radius: 50px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  
+    padding: 5px;
+    position: relative;
+    height: 26px;
+    width: 50px;
+    transform: scale(1);
+  
+  }
+  .label .ball {
+    background-color: #fff;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    height: 22px;
+    width: 22px;
+    transform: translateX(0px);
+    transition: transform 0.2s linear;
+  }
+  
+  .checkbox:checked + .label .ball {
+    transform: translateX(24px);
+  }
+  
+  .fa-moon {
+    color: #f1c40f;
+  }
+  
+  .fa-sun {
+    color: #f39c12;
+  }
+
+  /*RESPONSIVIDADE*/
+@media screen and (min-width: 768px) and (max-width: 992px) { /*TELAS MÉDIAS*/
+    #mudarTema {
+        left: 90%;
+    }
+}
+
+@media screen and (min-width: 992px) { /*TELAS GRANDES*/
+    #mudarTema {
+        left: 94%;
+    }
+}

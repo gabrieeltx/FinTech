@@ -68,6 +68,10 @@ text-decoration: underline;
 .botaoLogin:hover {
     background-color: #35459c;
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+    text-decoration: none;
+}
+.botaoLogin a:hover {
+    text-decoration: none;
 }
 
 #email, #senha {

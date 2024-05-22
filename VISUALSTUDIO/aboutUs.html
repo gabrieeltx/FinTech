@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="estilo/estiloAbout.css">
     <link rel="shortcut icon" href="logo/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" /> <!--MENU-->
+    <link rel="stylesheet" href="estilo/estiloDark.css">
 </head>
 <body onresize="mudouTamanho()">
     <header>
@@ -36,6 +37,18 @@
             <span><a href="paginaLogin.html"><strong>Entrar</strong></a></span>
         </div>
 
+
+        <!--MODO DARK-->
+    <div id="mudarTema">
+        <input type="checkbox" class="checkbox" id="check">
+
+        <label class="label" for="check">
+            <i class="fas fa-moon"></i>
+            <i class="fas fa-sun"></i>
+            <div class="ball"></div>
+        </label>
+    </div>
+
     </main>
 
     <footer>
@@ -60,5 +73,8 @@
                 }
                 }
             </script>
+    
+    <script src="scriptDark.js"></script>
+    <script src="https://kit.fontawesome.com/998c60ef77.js" crossorigin="anonymous"></script>
 </body>
 </html>

@@ -17,8 +17,7 @@
 html, body {
     background-color: rgb(228, 226, 227);
 }
-header {
-    
+header { 
     background-color: #1cbbd3;
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
 }
@@ -95,6 +94,7 @@ menu ul > li > a:hover {
     right: 10px;
     width: 15vw;
     transition: width 0.5s, height 0.5s;
+    z-index: 999;
 }
 .login a {
     text-decoration: none;
@@ -148,7 +148,7 @@ main .conteudo > img#nome{
 }
 main .conteudo > p{
     font-family: "Montserrat", serif;
-    font-size: 20px;
+    font-size: 15px;
     text-align: justify;
     text-indent: 30px;
 }
@@ -185,6 +185,7 @@ main .conteudo > p{
         
     }
 
+
 }
 
 @media screen and (min-width: 768px) and (max-width: 992px) { /*TELAS MÉDIAS*/
@@ -196,7 +197,7 @@ main .conteudo > p{
     }
     .logo {
         width: 16.5em;
-        top: 5px;
+        top: -10px;
         left: -10px;
     }
     menu {
@@ -207,7 +208,7 @@ main .conteudo > p{
         width: 15vw;
     }
     main {
-        height: 70vh;
+        height: 100vh;
 
     }
     main .conteudo {
@@ -231,11 +232,14 @@ main .conteudo > p{
     #burguer {
         display: none;
     }
+    header {
+        height: 85px;
+    }
     .conteiner_logo {
         height: 4em;
     }
     .logo {
-        width: 20em;
+        width: 18em;
         left: -10px;
         top: -10px;
     }
@@ -251,7 +255,7 @@ main .conteudo > p{
         text-align: center;
     }
     main {
-        height: 70vh;
+        height: 100vh;
 
     }
     main .conteudo {
