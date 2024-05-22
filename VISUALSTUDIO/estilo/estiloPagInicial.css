@@ -155,11 +155,12 @@ h1{
     width: 80vw;
     height: 80vh;
     left: 50%;
-    transform: translate(-50%);
     background-color: #fff;
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);    
+    transform: translate(-50%);
+
 }
 .form-group {
     margin-bottom: 15px;

@@ -12,11 +12,11 @@
         <div class="conteinerLogin">
             <img class="logo" src="logo/logo.png" alt="logo">
             <h2 id="titulo"><strong>Acesse sua conta</strong></h2>
-            <form action="login" method="post">
+            <form action="login" method="post" autocomplete="on">
                 <label for="Email"></label>
-                <input type="text" id="email" name="email" required placeholder="Email"><br>
+                <input type="text" id="email" name="email" required placeholder="Email" autocomplete="email"><br>
                 <label for="Senha"></label>
-                <input type="password" id="senha" name="senha" required placeholder="Senha"><br><br>
+                <input type="password" id="senha" name="senha" required placeholder="Senha" autocomplete="current-password"><br><br>
                 <label class="checkmark" type="checkbox"></label>
                 <input type="checkbox" class="checkmark">Manter-me conectado<br><br>
                 <button class="botaoLogin" type="submit"><a href="paginaInicial.html">Fazer Login</a></button>
