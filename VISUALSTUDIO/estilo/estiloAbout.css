@@ -16,11 +16,108 @@
 html, body {
     background-color: rgb(228, 226, 227);
 }
+header {
+    background-color: #1cbbd3;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+}
+#burguer{
+    display: inline-block;
+    position: absolute;
+    text-align: center;
+    color: var(--cor2);
+    cursor: pointer;
+    padding: 3px;
+    z-index: 999;
+}
+#burguer:hover{
+    color: var(--cor2);
+    background-color: var(--corfundobranco);
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+    border-radius: 6px;
+}
 
+menu {
+    display: block;
+    position: absolute;
+    left: 30px;
+    text-align: right;
+    color: var(--cor2);
+    border-radius: 6px;
+    background-color: var(--corfundobranco);
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+    z-index: 998;
+}
+menu > ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+menu > ul > li > a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    background-color: var(--corpreto);
+    color: var(--cor2);
+    border-top: 1px solid var(--cordestaque1);
+    border-bottom: 0.5px solid rgba(67, 89, 167, 0.473);
+}
+
+menu ul > li > a:hover {
+    color: var(--corletra);
+    background-color: #35459c;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+    border-radius: 6px;
+}
+
+.conteiner_logo {
+    background-color: #1cbbd3;
+    position: relative;
+    height: 60px;
+    transition: width 0.5s, height 0.5s;
+
+}
+
+.logo {
+    max-width: 30%;
+    position: relative;
+    padding-top: 10px;
+    transition: width 0.5s, height 0.5s;
+
+}
 main {
     display: block;
     width: 100vw;
     height: 100vh;
+}
+
+.login {
+    display: block;
+    position: absolute;
+    text-align: center;
+    background-color: rgb(70, 85, 166);
+    border: 1px solid rgb(70, 85, 166);
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 20px;
+    width: 15vw;
+    top: 10px;
+    right: 10px;
+    transition: width 0.5s, height 0.5s;
+
+}
+.login a {
+    text-decoration: none;
+    color: #e4e2e3;
+
+}
+.login:hover {
+    background-color: #35459c;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+}
+.login a:hover {
+    color: aliceblue;
+
 }
 main > section{
     display: block;
@@ -60,89 +157,6 @@ main > section{
     font-size: 16px;
     text-indent: 25px;
 }
-header {
-    background-color: #1cbbd3;
-    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
-}
-#burguer{
-    display: block;
-    position: absolute;
-    text-align: center;
-    color: var(--cor2);
-    cursor: pointer;
-    padding: 6px;
-}
-#burguer:hover{
-    color: var(--corletra);
-    background-color: #1cbbd3;
-    border-radius: 0px 0px 6px 6px;
-}
-
-menu {
-    display: none;
-}
-menu > ul {
-    list-style-type: none;
-
-}
-
-menu > ul > li > a {
-    display: block;
-    padding: 10px;
-    text-decoration: none;
-    background-color: var(--corpreto);
-    color: var(--corletra);
-    text-align: center;
-    border-top: var(--cordestaque1);
-}
-
-menu ul > li > a:hover {
-    color: var(--corletra);
-    background-color: #35459c;
-    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
-}
-.conteiner_logo {
-    background-color: #1cbbd3;
-    position: relative;
-    height: 60px;
-    transition: width 0.5s, height 0.5s;
-
-}
-
-.logo {
-    max-width: 30%;
-    position: relative;
-    padding-top: 10px;
-    transition: width 0.5s, height 0.5s;
-
-}
-
-.login {
-    display: block;
-    position: absolute;
-    text-align: center;
-    background-color: rgb(70, 85, 166);
-    border: 1px solid rgb(70, 85, 166);
-    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.5);
-    padding: 10px;
-    border-radius: 20px;
-    width: 15vw;
-    top: 10px;
-    right: 10px;
-}
-.login a {
-    text-decoration: none;
-    color: #e4e2e3;
-
-}
-.login:hover {
-    background-color: #35459c;
-    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
-}
-.login a:hover {
-    color: aliceblue;
-
-}
 .rodape {
     background-color: var(--cor3);
     bottom: 0px;
@@ -156,29 +170,31 @@ menu ul > li > a:hover {
     text-align: center;
     color: #e4e2e3;
 }
-/* telas médias MENU */
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 992px) { /*TELAS MÉDIAS*/
     #burguer {
         display: none;
     }
     menu {
         display: block;
+        position: absolute;
+        text-align: center;
+        top: 86px;
+        left: 0px;
+        width: 100vw;
+        border-radius: 0px;
+        background-color: none;
+        box-shadow: none;
     }
     menu > ul > li {
         display: inline-block;
     }
     menu > ul > li > a{
         border-radius: 6px;
+        border: 0px;
     }
     header {
         padding: 10px;
         
-    }
-
-} 
-@media screen and (min-width: 768px) and (max-width: 992px) { /*TELAS MÉDIAS*/
-    #burguer {
-        display: none;
     }
     .about {
         top: 40%;
@@ -202,25 +218,41 @@ menu ul > li > a:hover {
         left: -10px;
 
     }
-    menu {
-        padding-top:10px;
-        text-align: center;
-    }
     .login {
         width: 15vw;
     }
-    main > section{
-        top: 40%;
-    }
+
 }
 @media screen and (min-width: 992px) { /*TELAS GRANDES*/
     #burguer {
         display: none;
     }
-    .about {
-        top: 30%;
+    menu {
+        display: block;
+        position: absolute;
+        text-align: center;
+        top: 86px;
+        left: 0px;
+        width: 100vw;
+        border-radius: 0px;
+        background-color: none;
+        box-shadow: none;
     }
-    .about > h1{
+    menu > ul > li {
+        display: inline-block;
+    }
+    menu > ul > li > a{
+        border-radius: 6px;
+        border: 0px;
+    }
+    header {
+        padding: 10px;
+        
+    }
+    .about {
+        top: 35%;
+    }
+    section.about > h1{
         font-size: 25px;
     }
     .about > h2{
@@ -234,17 +266,14 @@ menu ul > li > a:hover {
         height: 4em;
     }
     .logo {
-        width: 20em;
+        width: 16em;
         top: 5px;
         left: -10px;
 
     }
-    menu {
-        padding-top:10px;
-        text-align: center;
-    }
     .login {
         width: 15vw;
     }
+
 }
 
