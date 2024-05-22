@@ -21,7 +21,6 @@ header {
     background-color: #1cbbd3;
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
 }
-
 #conta{
     display: inline-block;
     position: absolute;
@@ -131,67 +130,7 @@ main {
     color: #e4e2e3;
 }
 
-
-/*Formulário*/
-h1{
-    font-size: 20px;
-    text-align: center;
-    padding: 20px;
-}
-#abrirFormulario {
-    display: block;
-    background-color: rgb(70, 85, 166);    color: var(--corletra);
-    padding: 10px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-}
-#abrirFormulario:hover {
-    background-color: #354496;
-}
-
-#formulario {
-    display: none;
-    position: relative;
-    width: 80vw;
-    height: 80vh;
-    left: 50%;
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);    
-    transform: translate(-50%);
-
-}
-.form-group {
-    margin-bottom: 15px;
-}
-.form-group label {
-    display: block;
-    margin-bottom: 5px;
-    font-weight: bold;
-}
-.form-group input, .form-group select, .form-group textarea {
-    width: 90%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-}
-.form-group textarea {
-    resize: vertical;
-    height: 50px;
-}
-.form-group button {
-    background-color: rgb(70, 85, 166);    color: var(--corletra);
-    padding: 10px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-}
-.form-group button:hover {
-    background-color: #354496;
-}
-
+/*RESPONSIVIDADE*/
 @media screen and (min-width: 768px) and (max-width: 992px) { /*TELAS MÉDIAS*/
     .conteiner_logo {
         height: 6em;
