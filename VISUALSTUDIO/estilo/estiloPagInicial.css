@@ -79,6 +79,7 @@ menu ul > li > a:hover {
     background-color: #1cbbd3;
     position: relative;
     height: 60px;
+    transition: width 0.5s, height 0.5s;
 
 }
 
@@ -86,6 +87,8 @@ menu ul > li > a:hover {
     max-width: 30%;
     position: relative;
     padding-top: 10px;
+    transition: width 0.5s, height 0.5s;
+
 }
 main {
     display: block;

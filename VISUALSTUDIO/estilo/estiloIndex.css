@@ -29,6 +29,8 @@ header {
     color: var(--cor2);
     cursor: pointer;
     padding: 6px;
+    transition: width 0.5s, height 0.5s;
+
 }
 #burguer:hover{
     color: var(--corletra);
@@ -38,9 +40,12 @@ header {
 menu {
     display: none;
     color: var(--corletra);
+    transition: width 0.5s, height 0.5s;
+
 }
 menu > ul {
     list-style-type: none;
+    transition: width 0.5s, height 0.5s;
 
 }
 
@@ -52,6 +57,8 @@ menu > ul > li > a {
     color: var(--corletra);
     text-align: center;
     border-top: var(--cordestaque1);
+    transition: width 0.5s, height 0.5s;
+
 }
 menu ul > li > a:hover {
     color: var(--corletra);
@@ -62,6 +69,7 @@ menu ul > li > a:hover {
     background-color: #1cbbd3;
     position: relative;
     height: 60px;
+    transition: width 0.5s, height 0.5s;
 
 }
 
@@ -69,6 +77,8 @@ menu ul > li > a:hover {
     max-width: 30%;
     position: relative;
     padding-top: 10px;
+    transition: width 0.5s, height 0.5s;
+
 }
 
 .login {
@@ -84,7 +94,7 @@ menu ul > li > a:hover {
     top: 10px;
     right: 10px;
     width: 15vw;
-    
+    transition: width 0.5s, height 0.5s;
 }
 .login a {
     text-decoration: none;
@@ -117,6 +127,8 @@ main .conteudo {
     left: 50%;
     transform: translate(-50%, -50%);
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    transition: width 0.5s, height 0.5s;
+
 }
 main .conteudo > img#logo{
     display: block;
