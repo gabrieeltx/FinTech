@@ -25,9 +25,9 @@ header {
 #conta{
     display: inline-block;
     position: absolute;
+    text-align: center;
     top: 10px;
     right: 10px;
-    text-align: center;
     color: var(--corletra);
     cursor: pointer;
     padding: 6px;
@@ -48,6 +48,7 @@ menu {
     border-radius: 6px;
     background-color: var(--corfundobranco);
     box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+    z-index: 999;
 
 }
 menu > ul {
@@ -140,7 +141,8 @@ h1{
 }
 #abrirFormulario {
     display: block;
-    background-color: rgb(70, 85, 166);    color: var(--corletra);
+    background-color: rgb(70, 85, 166);    
+    color: var(--corletra);
     padding: 10px 20px;
     border: none;
     border-radius: 4px;
@@ -170,6 +172,7 @@ h1{
     display: block;
     margin-bottom: 5px;
     font-weight: bold;
+    color: var(--cor2);
 }
 .form-group input, .form-group select, .form-group textarea {
     width: 90%;
@@ -182,7 +185,8 @@ h1{
     height: 50px;
 }
 .form-group button {
-    background-color: rgb(70, 85, 166);    color: var(--corletra);
+    background-color: rgb(70, 85, 166);    
+    color: var(--corletra);
     padding: 10px 20px;
     border: none;
     border-radius: 4px;

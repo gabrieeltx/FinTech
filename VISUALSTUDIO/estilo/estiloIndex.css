@@ -22,30 +22,36 @@ header {
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
 }
 #burguer{
-    display: block;
+    display: inline-block;
     position: absolute;
     text-align: center;
     color: var(--cor2);
     cursor: pointer;
     padding: 6px;
-    transition: width 0.5s, height 0.5s;
 
 }
 #burguer:hover{
-    color: var(--corletra);
-    background-color: #1cbbd3;
-    border-radius: 0px 0px 6px 6px;
+    color: var(--cor2);
+    background-color: var(--corfundobranco);
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+    border-radius: 6px;
 }
 menu {
     display: none;
-    color: var(--corletra);
-    transition: width 0.5s, height 0.5s;
-
+    position: fixed;
+    top: 61px;
+    left: 36px;
+    text-align: right;
+    color: var(--cor2);
+    border-radius: 6px;
+    background-color: var(--corfundobranco);
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+    z-index: 999;
 }
 menu > ul {
     list-style-type: none;
-    transition: width 0.5s, height 0.5s;
-
+    margin: 0;
+    padding: 0;
 }
 
 menu > ul > li > a {
@@ -53,16 +59,17 @@ menu > ul > li > a {
     padding: 10px;
     text-decoration: none;
     background-color: var(--corpreto);
-    color: var(--corletra);
-    text-align: center;
-    border-top: var(--cordestaque1);
-    transition: width 0.5s, height 0.5s;
+    color: var(--cor2);
+    border-top: 1px solid var(--cordestaque1);
+    border-bottom: 0.5px solid rgba(67, 89, 167, 0.473);
+    border-radius: 6px;
 
 }
 menu ul > li > a:hover {
     color: var(--corletra);
-    background-color: rgba(53, 69, 156, 0.549);
+    background-color: #35459c;
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+    border-radius: 6px;
 }
 .conteiner_logo {
     background-color: #1cbbd3;
@@ -201,8 +208,23 @@ main .conteudo > p{
         left: -10px;
     }
     menu {
-        padding-top:10px;
+        display: block;
+        position: absolute;
         text-align: center;
+        top: 86px;
+        left: 0px;
+        width: 100vw;
+        border-radius: 0px;
+        background-color: transparent;
+        box-shadow: none;
+        z-index: 998;
+    }
+    menu > ul > li {
+        display: inline-block;
+    }
+    menu > ul > li > a{
+        border-radius: 6px;
+        border: 0px;
     }
     .login {
         width: 15vw;
@@ -212,8 +234,9 @@ main .conteudo > p{
 
     }
     main .conteudo {
+        top: 40%;
         width: 60%;
-        height: 60%;
+        height: 50%;
     }
     main .conteudo > img#logo{
         width: 10vw;
@@ -251,8 +274,24 @@ main .conteudo > p{
         
     }
     menu {
-        padding-top:10px;
+        display: block;
+        position: absolute;
         text-align: center;
+        top: 86px;
+        left: 0px;
+        width: 100vw;
+        border-radius: 0px;
+        background-color: transparent;
+        box-shadow: none;
+        z-index: 998;
+
+    }
+    menu > ul > li {
+        display: inline-block;
+    }
+    menu > ul > li > a{
+        border-radius: 6px;
+        border: 0px;
     }
     main {
         height: 100vh;
@@ -270,7 +309,7 @@ main .conteudo > p{
         
     }
     main .conteudo > p{
-        font-size: 20px;
+        font-size: 22px;
         text-align: center;
     }
 }

@@ -24,9 +24,8 @@ main {
     position: absolute;
     top: 50%;
     left: 50%;
-    
-    width: 250px;
-    height: 450px;
+    width: 70%;
+    height: 550px;
     padding: 40px;
     text-align: center;
     background-color: 	#1cbbd3;
@@ -42,6 +41,7 @@ main {
     width: 100%;
     padding-bottom: 10px;
     border-bottom: 0.5px solid rgba(67, 89, 167, 0.473);
+    transition: width 0.5s, height 0.5s;
 
 }
 a {
@@ -74,13 +74,22 @@ text-decoration: underline;
     text-decoration: none;
 }
 
-#email, #senha {
+.conteinerLogin > form > #email {
     display: block;
     border-radius: 5px;
     text-decoration: solid;
     padding: 15px;
     border-style: hidden;
-    width: 80%;
+    width: 100%;
+    box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.479); 
+}
+.conteinerLogin > form > #senha {
+    display: block;
+    border-radius: 5px;
+    text-decoration: solid;
+    padding: 15px;
+    border-style: hidden;
+    width: 100%;
     box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.479); 
 }
 
@@ -102,12 +111,13 @@ h2#titulo {
 #rodape {
     text-align: center;
     padding-top: 3%;
-    font-size: 15px;
+    font-size: 12px;
 }
 
 .checkmark {
     font-size: 13px;
     text-align: justify;
+
 }
 
 /* RESPONSIVIDADE */
@@ -117,6 +127,8 @@ h2#titulo {
 
     .conteinerLogin {
         width: 50vw;
+        height: 550px;
+
     }
     .logo {
         position:relative;
@@ -125,18 +137,16 @@ h2#titulo {
     }
     .botaoLogin {
         width: 60%;
-        font-size: 20px;
+        font-size: 15px;
     }
     #email, #senha{
-        display: block;
-        width: 80%;
-        font-size: 18px;
+        font-size: 15px;
     }
     .link{
-        font-size: 18px;
+        font-size: 16px;
     }
     .checkmark{
-        font-size: 18px;
+        font-size: 16px;
     }
     form {
         display: block;
@@ -147,7 +157,7 @@ h2#titulo {
 @media screen and (min-width: 992px) { /*TELAS GRANDES*/
     .conteinerLogin{
         width: 40vw;
-        height: 500px;
+        height: 560px;
 
     } 
     h2#titulo {
@@ -158,11 +168,10 @@ h2#titulo {
     }
     .botaoLogin {
         width: 60%;
+        font-size: 15px;
     }
     #email, #senha {
-        display: block;
-        width: 80%;
-        font-size: 18px;
+        font-size: 15px;
     }
     .link{
         font-size: 18px;

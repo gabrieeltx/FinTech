@@ -30,9 +30,6 @@
             <li><a href="paginaInicial.html"><strong>Gerenciador</strong></a></li>
             <li><a href="paginaEducacao.html"><strong>Educação</strong></a></li> 
         </ul>
-    </nav>
-    <main>
-        <h1>Educação Financeira</h1>
 
         <!--MODO DARK-->
     <div id="mudarTema">
@@ -44,6 +41,11 @@
             <div class="ball"></div>
         </label>
     </div>
+    </nav>
+    <main>
+        <h1>Educação Financeira</h1>
+
+        
     </main>
 
     <footer>
@@ -52,7 +54,7 @@
         </div>
     </footer>
     <script>
-                function mudouTamanho(){
+        function mudouTamanho(){
             if (window.innerWidth >= 768) {
                 itens.style.display = 'block'
             } else {
@@ -60,13 +62,13 @@
             }
         }
         
-                function clickMenu() {
-                   if (itens.style.display == 'block') {
-                    itens.style.display = 'none'
-                }else {
-                    itens.style.display = 'block'
-                }
-                }
+        function clickMenu() {
+            if (itens.style.display == 'block') {
+                itens.style.display = 'none'
+            }else {
+                itens.style.display = 'block'
+        }
+        }
     </script>
     <script src="scriptDark.js"></script>
     <script src="https://kit.fontawesome.com/998c60ef77.js" crossorigin="anonymous"></script>
