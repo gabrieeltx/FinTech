@@ -3,9 +3,11 @@
     box-sizing: border-box;
 
 }
+
 body {
     transition: background 0.2s linear;
   }
+
 #mudarTema {
     display: flex;
     position: absolute;
