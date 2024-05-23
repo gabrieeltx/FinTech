@@ -43,9 +43,12 @@
     </div>
     </nav>
     <main>
-        <h1>Educação Financeira</h1>
+        <h2>Navegue pelos vídeos</h2>
+        <ul id="principal">
+            <li onclick="loadVideo(this, 'https://www.youtube.com/embed/Ep65y-eQxgE?si=iT65S5kxQX8tbeFr')">Educação Financeira</li>
+            <li onclick="loadVideo(this, 'https://www.youtube.com/embed/dF7K-fnOYF8?si=Zt2PEaonXMoRbh5G')">Técnicas para gastar menos dinheiro</li>
+        </ul>
 
-        
     </main>
 
     <footer>
@@ -68,6 +71,25 @@
             }else {
                 itens.style.display = 'block'
         }
+        }
+    </script>
+    <!--MENU DE VIDEOS-->
+    <script> 
+        function loadVideo(element, url) {
+            // Remove any existing iframes
+            var existingFrames = document.querySelectorAll('.videoFrame');
+            existingFrames.forEach(function(frame) {
+                frame.parentNode.removeChild(frame);
+            });
+
+            // Create a new iframe
+            var iframe = document.createElement('iframe');
+            iframe.className = 'videoFrame';
+            iframe.src = url;
+            iframe.allowFullscreen = true;
+
+            // Insert the iframe after the clicked element
+            element.parentNode.insertBefore(iframe, element.nextSibling);
         }
     </script>
     <script src="scriptDark.js"></script>
