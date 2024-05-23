@@ -79,9 +79,9 @@ menu ul > li > a:hover {
 }
 
 .logo {
-    max-width: 30%;
+    width: 31%;
+    top: 5px;
     position: relative;
-    padding-top: 10px;
     transition: width 0.5s, height 0.5s;
 
 }
@@ -100,9 +100,9 @@ main {
     box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.5);
     padding: 10px;
     border-radius: 20px;
-    width: 15vw;
+    width: 20vw;
     top: 10px;
-    right: 10px;
+    right: 10px; 
     transition: width 0.5s, height 0.5s;
 
 }
@@ -123,10 +123,10 @@ main > section{
     display: block;
     position: relative;
     width: 80vw;
-    top: 50%;
+    top: 55%;
     left: 50%;
     transform: translate(-50%, -50%);
-    transition: width 0.5s, height 0.5s;
+    transition: width 0.3s, height 0.3s;
 
 }
 .about > h1, .about > h2, .about > p {
@@ -182,7 +182,7 @@ main > section{
         left: 0px;
         width: 100vw;
         border-radius: 0px;
-        background-color: none;
+        background-color: transparent;
         box-shadow: none;
     }
     menu > ul > li {
@@ -213,8 +213,8 @@ main > section{
         height: 4em;
     }
     .logo {
-        width: 16em;
-        top: 5px;
+        min-width: 22%;
+        max-width: 26%;
         left: -10px;
 
     }
@@ -235,7 +235,7 @@ main > section{
         left: 0px;
         width: 100vw;
         border-radius: 0px;
-        background-color: none;
+        background-color: transparent;
         box-shadow: none;
     }
     menu > ul > li {
@@ -266,8 +266,8 @@ main > section{
         height: 4em;
     }
     .logo {
-        width: 16em;
-        top: 5px;
+        min-width: 22%;
+        max-width: 22%;        
         left: -10px;
 
     }
