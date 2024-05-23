@@ -85,11 +85,11 @@ menu ul > li > a:hover {
 }
 
 .logo {
-    max-width: 30%;
+    max-width: 31%;
+    top: 5px;
     position: relative;
-    padding-top: 10px;
     transition: width 0.5s, height 0.5s;
-
+    padding-top: 5px;
 }
 main {
     display: block;
@@ -139,22 +139,24 @@ main > h1 {
 /*RESPONSIVIDADE*/
 @media screen and (min-width: 768px) and (max-width: 992px) { /*TELAS MÉDIAS*/
     .conteiner_logo {
-        height: 6em;
+        height: 5em;
     }
     .logo {
-        min-width: 16em;
-        top: 5px;
+        padding-top: 2px;
+        min-width: 22%;
+        max-width: 26%;
         left: -10px;
     }
 }
 
 @media screen and (min-width: 992px) { /*TELAS GRANDES*/
     .conteiner_logo {
-        height: 6em;
+        height: 5em;
     }
     .logo {
-        width: 20em;
-        left: -10px;
+        padding-top: 0px;
+        min-width: 22%;
+        max-width: 22%;        left: -10px;
     }
 
 }
