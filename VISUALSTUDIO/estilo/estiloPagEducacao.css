@@ -167,9 +167,9 @@ main > ul > li {
     height: 200px;
     border: none;
     margin-top: 10px;
-}
+} 
 
-/*RESPONSIVIDADE*/
+/*RESPONSIVIDADE*/ 
 @media screen and (min-width: 768px) and (max-width: 992px) { /*TELAS MÉDIAS*/
     .conteiner_logo {
         height: 5em;
@@ -195,7 +195,8 @@ main > ul > li {
     .logo {
         padding-top: 0px;
         min-width: 22%;
-        max-width: 22%;        left: -10px;
+        max-width: 22%;        
+        left: -10px;
     }
     #principal {
         width: 70vw;
@@ -203,5 +204,5 @@ main > ul > li {
     .videoFrame {
         height: 400px;
         }
-
+    
 }
