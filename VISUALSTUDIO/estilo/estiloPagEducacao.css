@@ -164,7 +164,8 @@ main > ul {
     left: 50%;
     transform: translate(-50%);
     background-color: var(--cor2);
-    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.5);    border-radius: 10px;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.5);    
+    border-radius: 6px;
     padding: 16px;
     width: 90vw;
 
