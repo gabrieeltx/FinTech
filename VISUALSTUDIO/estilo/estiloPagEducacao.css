@@ -21,6 +21,37 @@ header {
     background-color: #1cbbd3;
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
 }
+.conteiner_logo {
+    background-color: #1cbbd3;
+    position: relative;
+    height: 60px;
+    transition: width 0.5s, height 0.5s;
+
+}
+.logo {
+    width: 50px;
+    position: relative;
+    margin-top: 2px;
+    transition: width 0.5s, height 0.5s;
+
+}
+.conteiner_logo > h1 {
+    display: inline-block;
+    position: absolute;
+    top: 12px;
+    color: var(--corletra);
+    font-family: "Belleza";
+    font-size: 20px;
+}
+.conteiner_logo > h2 {
+    display: inline-block;
+    position: absolute;
+    top: 32px;
+    color: var(--corletra);
+    font-family: "Montserrat";
+    font-size: 8px;
+    padding: 0px;
+}
 #conta{
     display: inline-block;
     position: absolute;
@@ -71,23 +102,6 @@ menu ul > li > a:hover {
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
     border-radius: 6px;
 
-}
-
-
-.conteiner_logo {
-    background-color: #1cbbd3;
-    position: relative;
-    height: 60px;
-    transition: width 0.5s, height 0.5s;
-
-}
-
-.logo {
-    max-width: 31%;
-    top: 5px;
-    position: relative;
-    transition: width 0.5s, height 0.5s;
-    padding-top: 5px;
 }
 main {
     display: block;
@@ -171,14 +185,20 @@ main > ul > li {
 
 /*RESPONSIVIDADE*/ 
 @media screen and (min-width: 768px) and (max-width: 992px) { /*TELAS MÉDIAS*/
-    .conteiner_logo {
-        height: 5em;
+    header {
+        padding: 10px;
+        
     }
     .logo {
-        padding-top: 2px;
-        min-width: 22%;
-        max-width: 26%;
-        left: -10px;
+        margin-top: 0px;
+        width: 60px;
+    }
+    .conteiner_logo > h1 {
+        font-size: 25px;
+    }
+    .conteiner_logo > h2 {
+        top: 34px;
+        font-size: 10px;
     }
     #principal {
         width: 70vw;
@@ -189,14 +209,20 @@ main > ul > li {
 }
 
 @media screen and (min-width: 992px) { /*TELAS GRANDES*/
-    .conteiner_logo {
-        height: 5em;
+    header {
+        height: 85px;
     }
     .logo {
-        padding-top: 0px;
-        min-width: 22%;
-        max-width: 22%;        
-        left: -10px;
+        margin-top: 0px;
+        width: 80px;
+    }
+    .conteiner_logo > h1 {
+        font-size: 28px;
+        top: 20px;
+    }
+    .conteiner_logo > h2 {
+        font-size: 12px;
+        top: 45px;
     }
     #principal {
         width: 70vw;

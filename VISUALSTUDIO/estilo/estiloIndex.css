@@ -21,6 +21,36 @@ header {
     background-color: #1cbbd3;
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
 }
+.conteiner_logo {
+    background-color: #1cbbd3;
+    position: relative;
+    height: 60px;
+    transition: width 0.5s, height 0.5s;
+
+}
+.logo {
+    width: 50px;
+    position: relative;
+    margin-top: 2px;
+    transition: width 0.5s, height 0.5s;
+
+}
+.conteiner_logo > h1 {
+    display: inline-block;
+    position: absolute;
+    top: 12px;
+    color: var(--corletra);
+    font-family: "Belleza";
+    font-size: 20px;
+}
+.conteiner_logo > h2 {
+    display: inline-block;
+    position: absolute;
+    top: 35px;
+    color: var(--corletra);
+    font-family: "Montserrat";
+    font-size: 8px;
+}
 #burguer{
     display: inline-block;
     position: absolute;
@@ -68,21 +98,7 @@ menu ul > li > a:hover {
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
     border-radius: 6px;
 }
-.conteiner_logo {
-    background-color: #1cbbd3;
-    position: relative;
-    height: 60px;
-    transition: width 0.5s, height 0.5s;
 
-}
-
-.logo {
-    max-width: 30%;
-    position: relative;
-    padding-top: 10px;
-    transition: width 0.5s, height 0.5s;
-
-}
 
 .login {
     display: block;
@@ -169,40 +185,25 @@ main .conteudo > p{
     text-align: center;
     color: #e4e2e3;
 }
-
-/* telas médias MENU */
-@media screen and (min-width: 768px) {
-    #burguer {
-        display: none;
-    }
-    menu {
-        display: block;
-    }
-    menu > ul > li {
-        display: inline-block;
-    }
-    menu > ul > li > a{
-        border-radius: 6px;
-    }
-    header {
-        padding: 10px;
-        
-    }
-
-
-}
+/*RESPONSIVIDADE*/
 
 @media screen and (min-width: 768px) and (max-width: 992px) { /*TELAS MÉDIAS*/
     #burguer {
         display: none;
     }
-    .conteiner_logo {
-        height: 4em;
+    header {
+        padding: 10px;
+        
     }
     .logo {
-        width: 16.5em;
-        top: -10px;
-        left: -10px;
+        margin-top: 0px;
+        width: 60px;
+    }
+    .conteiner_logo > h1 {
+        font-size: 25px;
+    }
+    .conteiner_logo > h2 {
+        font-size: 10px;
     }
     menu {
         display: block;
@@ -255,13 +256,17 @@ main .conteudo > p{
     header {
         height: 85px;
     }
-    .conteiner_logo {
-        height: 4em;
-    }
     .logo {
-        width: 18em;
-        left: -10px;
-        top: -10px;
+        margin-top: 0px;
+        width: 80px;
+    }
+    .conteiner_logo > h1 {
+        font-size: 28px;
+        top: 20px;
+    }
+    .conteiner_logo > h2 {
+        font-size: 12px;
+        top: 45px;
     }
     .login {
         width: 15vw;
