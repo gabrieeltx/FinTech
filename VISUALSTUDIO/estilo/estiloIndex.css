@@ -9,49 +9,48 @@
     --corfundobranco: rgb(228, 226, 227);
     --corletra: rgba(235, 230, 227, 1);
 }
+
 * {
     margin: 0px;
     padding: 0px;
     font-family: "Montserrat", serif;
 }
-html, body {
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     background-color: rgb(228, 226, 227);
+    box-sizing: border-box;
+    height: 100vh;
 }
-header { 
+
+header {
+    width: 100vw;
     background-color: #1cbbd3;
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
 }
 .conteiner_logo {
-    background-color: #1cbbd3;
-    position: relative;
-    height: 60px;
-    transition: width 0.5s, height 0.5s;
-
+    height: 80px;
 }
 .logo {
     width: 50px;
-    position: relative;
-    margin-top: 2px;
-    transition: width 0.5s, height 0.5s;
-
 }
-.conteiner_logo > h1 {
-    display: inline-block;
-    position: absolute;
-    top: 12px;
+
+.conteiner_logo>h1 {
     color: var(--corletra);
     font-family: "Belleza";
     font-size: 20px;
 }
-.conteiner_logo > h2 {
-    display: inline-block;
-    position: absolute;
-    top: 35px;
+
+.conteiner_logo>h2 {
     color: var(--corletra);
     font-family: "Montserrat";
     font-size: 8px;
 }
-#burguer{
+
+#burguer {
     display: inline-block;
     position: absolute;
     text-align: center;
@@ -60,17 +59,16 @@ header {
     padding: 6px;
 
 }
-#burguer:hover{
+
+#burguer:hover {
     color: var(--corletra);
     background-color: rgba(30, 32, 34, 0.658);
     box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.5);
     border-radius: 6px;
 }
+
 menu {
-    display: none;
-    position: fixed;
-    top: 61px;
-    left: 36px;
+
     text-align: right;
     padding: 10px;
     border-radius: 6px;
@@ -78,12 +76,13 @@ menu {
     box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
     z-index: 999;
 }
-menu > ul {
+
+menu>ul {
     list-style-type: none;
     margin: 0;
 }
 
-menu > ul > li > a {
+menu>ul>li>a {
     display: block;
     padding: 10px;
     text-decoration: none;
@@ -92,92 +91,95 @@ menu > ul > li > a {
     text-shadow: 1px 1px 3px black;
 
 }
-menu ul > li > a:hover {
+
+menu ul>li>a:hover {
     color: var(--corletra);
     background-color: var(--cor2);
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
     border-radius: 6px;
 }
 
-
-.login {
-    display: block;
-    position: absolute;
-    text-align: center;
-    background-color: #4655a6;
-    border: 1px solid #4655a6;
-    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.5);
-    padding: 10px;
-    border-radius: 20px;
-    width: 30vw;
-    top: 10px;
-    right: 10px;
-    width: 15vw;
-    transition: width 0.5s, height 0.5s;
-    z-index: 999;
-}
-.login a {
-    text-decoration: none;
-    color: #e4e2e3;
-
-}
-.login:hover {
-    background-color: #35459c;
-    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
-}
-.login a:hover {
-    color: aliceblue;
-
-}
 main {
-    display: block;
-    width: 100vw;
-    height: 86vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80vw;
+    height: 60vh;
 }
+
 main .conteudo {
-    display: block;
-    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     width: 60vw;
     height: 60vh;
     padding: 40px;
     background-color: rgb(28, 187, 211);
     border-radius: 8px;
     color: var(--corletra);
-    top: 50%;
-    left: 50%;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-    transition: width 0.5s, height 0.5s;
-    transform: translate(-50%, -50%);
 
 }
-main .conteudo > img#logo{
-    display: block;
-    position: relative;
-    left: 50%;
-    transform: translate(-50%);
+
+main .conteudo>img#logo {
     width: 20vw;
 }
-main .conteudo > img#nome{
+
+main .conteudo>img#nome {
     display: block;
     position: relative;
-    left: 50%;
-    transform: translate(-50%);
     width: 40vw;
     border-bottom: 0.5px solid rgba(67, 89, 167, 0.473);
 
 }
-main .conteudo > p{
+
+main .conteudo>p {
     font-family: "Montserrat", serif;
     font-size: 15px;
     text-align: justify;
     text-indent: 30px;
 }
-.rodape {
-    background-color: var(--cor3);
-    bottom: 0px;
-    position: relative;
+
+.entrar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #4655a6;
+    border: 1px solid #4655a6;
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 20px;
+    width: 100px;
+    z-index: 999;
+}
+
+.entrar a {
+    text-decoration: none;
+    color: #e4e2e3;
+
+}
+
+.entrar:hover {
+    background-color: #35459c;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+}
+
+.entrar a:hover {
+    color: aliceblue;
+
+}
+
+.botoes {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+footer {
     width: 100%;
     height: 6vh;
+    background-color: var(--cor3);
 }
 
 .rodape p {
@@ -185,26 +187,34 @@ main .conteudo > p{
     text-align: center;
     color: #e4e2e3;
 }
+
 /*RESPONSIVIDADE*/
 
-@media screen and (min-width: 768px) and (max-width: 992px) { /*TELAS MÉDIAS*/
+@media screen and (min-width: 768px) and (max-width: 992px) {
+
+    /*TELAS MÉDIAS*/
     #burguer {
         display: none;
     }
+
     header {
         padding: 10px;
-        
+
     }
+
     .logo {
         margin-top: 0px;
         width: 60px;
     }
-    .conteiner_logo > h1 {
+
+    .conteiner_logo>h1 {
         font-size: 25px;
     }
-    .conteiner_logo > h2 {
+
+    .conteiner_logo>h2 {
         font-size: 10px;
     }
+
     menu {
         display: block;
         position: absolute;
@@ -217,64 +227,81 @@ main .conteudo > p{
         box-shadow: none;
         z-index: 998;
     }
-    menu > ul > li {
+
+    menu>ul>li {
         display: inline-block;
     }
-    menu > ul > li > a{
+
+    menu>ul>li>a {
         border-radius: 6px;
         border: 0px;
     }
+
     .login {
         width: 15vw;
     }
+
     main {
         height: 100vh;
 
     }
+
     main .conteudo {
         top: 40%;
         width: 60%;
         height: 50%;
     }
-    main .conteudo > img#logo{
+
+    main .conteudo>img#logo {
         width: 10vw;
     }
-    main .conteudo > img#nome{
+
+    main .conteudo>img#nome {
         width: 20vw;
-        
+
     }
-    main .conteudo > p{
+
+    main .conteudo>p {
         font-size: 20px;
 
     }
 }
 
-@media screen and (min-width: 992px) { /*TELAS GRANDES*/
+@media screen and (min-width: 992px) {
+
+    /*TELAS GRANDES*/
     #burguer {
         display: none;
     }
+
     header {
         height: 85px;
     }
+
     .logo {
         margin-top: 0px;
         width: 80px;
     }
-    .conteiner_logo > h1 {
+
+    .conteiner_logo>h1 {
         font-size: 28px;
         top: 20px;
     }
-    .conteiner_logo > h2 {
+
+    .conteiner_logo>h2 {
         font-size: 12px;
         top: 45px;
     }
+
     .login {
         width: 15vw;
     }
+
     .conteiner_logo {
         height: 30px;
-        
+
     }
+
     menu {
         display: block;
         position: absolute;
@@ -288,29 +315,36 @@ main .conteudo > p{
         z-index: 998;
 
     }
-    menu > ul > li {
+
+    menu>ul>li {
         display: inline-block;
     }
-    menu > ul > li > a{
+
+    menu>ul>li>a {
         border-radius: 6px;
         border: 0px;
     }
+
     main {
         height: 100vh;
 
     }
+
     main .conteudo {
         width: 60%;
         height: 60%;
     }
-    main .conteudo > img#logo{
+
+    main .conteudo>img#logo {
         width: 8vw;
     }
-    main .conteudo > img#nome{
+
+    main .conteudo>img#nome {
         width: 15vw;
-        
+
     }
-    main .conteudo > p{
+
+    main .conteudo>p {
         font-size: 22px;
         text-align: center;
     }
