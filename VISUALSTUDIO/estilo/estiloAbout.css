@@ -12,43 +12,74 @@
     margin: 0px;
     padding: 0px;
     font-family: "Montserrat", serif;
+    box-sizing: border-box;
 }
-html, body {
-    background-color: rgb(228, 226, 227);
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--corfundobranco);
+    height: 100vh;
 }
 header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100vw;
+    height: 100px;
     background-color: #1cbbd3;
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
-}
-.conteiner_logo {
-    background-color: #1cbbd3;
-    position: relative;
-    height: 60px;
-    transition: width 0.5s, height 0.5s;
+    padding: 10px;
 
 }
-.logo {
-    width: 50px;
-    position: relative;
-    margin-top: 2px;
-    transition: width 0.5s, height 0.5s;
-
+header .logo {
+    display: block;
+}
+.conteiner_logo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 .conteiner_logo > h1 {
-    display: inline-block;
-    position: absolute;
-    top: 12px;
     color: var(--corletra);
     font-family: "Belleza";
     font-size: 20px;
 }
 .conteiner_logo > h2 {
-    display: inline-block;
-    position: absolute;
-    top: 35px;
     color: var(--corletra);
     font-family: "Montserrat";
     font-size: 8px;
+}
+.entrar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #4655a6;
+    border: 1px solid #4655a6;
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 20px;
+    width: 100px;
+    z-index: 999;
+}
+
+.entrar a {
+    text-decoration: none;
+    color: #e4e2e3;
+
+}
+
+.entrar:hover {
+    background-color: #35459c;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+
+.entrar a:hover {
+    color: aliceblue;
+
 }
 #burguer{
     display: inline-block;
@@ -67,27 +98,22 @@ header {
 }
 
 menu {
-    display: block;
-    position: absolute;
-    left: 30px;
     text-align: right;
-    color: var(--cor2);
+    padding: 10px;
     border-radius: 6px;
-    background-color: var(--corfundobranco);
+    background-color: rgba(30, 32, 34, 0.658);
     box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
-    z-index: 998;
+    z-index: 999;
 }
 menu > ul {
     list-style-type: none;
     margin: 0;
-    padding: 0;
 }
 
 menu > ul > li > a {
     display: block;
     padding: 10px;
     text-decoration: none;
-    background-color: var(--corpreto);
     color: var(--cor2);
     border-top: 1px solid var(--cordestaque1);
     border-bottom: 0.5px solid rgba(67, 89, 167, 0.473);
@@ -101,47 +127,19 @@ menu ul > li > a:hover {
 }
 
 main {
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100vw;
     height: 100vh;
 }
 
-.login {
-    display: block;
-    position: absolute;
-    text-align: center;
-    background-color: rgb(70, 85, 166);
-    border: 1px solid rgb(70, 85, 166);
-    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.5);
-    padding: 10px;
-    border-radius: 20px;
-    width: 20vw;
-    top: 10px;
-    right: 10px; 
-    transition: width 0.5s, height 0.5s;
-
-}
-.login a {
-    text-decoration: none;
-    color: #e4e2e3;
-
-}
-.login:hover {
-    background-color: #35459c;
-    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
-}
-.login a:hover {
-    color: aliceblue;
-
-}
 main > section{
-    display: block;
-    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     width: 80vw;
-    top: 55%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    transition: width 0.3s, height 0.3s;
 
 }
 .about > h1, .about > h2, .about > p {
@@ -172,13 +170,12 @@ main > section{
     font-size: 16px;
     text-indent: 25px;
 }
-.rodape {
-    background-color: var(--cor3);
-    bottom: 0px;
-    position: relative;
+footer {
     width: 100%;
     height: 6vh;
+    background-color: var(--cor3);
 }
+
 
 .rodape p {
     padding-top: 10px;
