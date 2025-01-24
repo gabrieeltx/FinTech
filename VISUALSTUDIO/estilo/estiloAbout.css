@@ -1,6 +1,7 @@
 @charset "UTF-8";
 @import url('https://fonts.googleapis.com/css2?family=Belleza&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Belleza&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
 :root {
     --cor1: rgba(29, 186, 214, 1);
     --cor2: rgba(67, 88, 167, 1);
@@ -8,56 +9,65 @@
     --corfundobranco: rgb(228, 226, 227);
     --corletra: rgba(235, 230, 227, 1);
 }
+
 * {
     margin: 0px;
     padding: 0px;
     font-family: "Montserrat", serif;
     box-sizing: border-box;
 }
+
 body {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     background-color: var(--corfundobranco);
+    width: 100vw;
     height: 100vh;
 }
+
 header {
     display: flex;
     align-items: center;
     justify-content: space-between;
     width: 100vw;
     height: 100px;
-    background-color: #1cbbd3;
+    background-color: var(--cor1);
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
     padding: 10px;
 
 }
+
 header .logo {
-    display: block;
+    width: 10%;
 }
-.conteiner_logo{
+
+.conteiner_logo {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
-.conteiner_logo > h1 {
+
+.conteiner_logo>h1 {
     color: var(--corletra);
     font-family: "Belleza";
     font-size: 20px;
 }
-.conteiner_logo > h2 {
+
+.conteiner_logo>h2 {
     color: var(--corletra);
     font-family: "Montserrat";
     font-size: 8px;
 }
+
 .entrar {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #4655a6;
-    border: 1px solid #4655a6;
+    background-color: var(--cor2);
+    border: 1px solid var(--cor2);
     box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.5);
     padding: 10px;
     border-radius: 20px;
@@ -77,11 +87,7 @@ header .logo {
     cursor: pointer;
 }
 
-.entrar a:hover {
-    color: aliceblue;
-
-}
-#burguer{
+#burguer {
     display: inline-block;
     position: absolute;
     text-align: center;
@@ -90,7 +96,8 @@ header .logo {
     padding: 3px;
     z-index: 999;
 }
-#burguer:hover{
+
+#burguer:hover {
     color: var(--cor2);
     background-color: var(--corfundobranco);
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
@@ -105,12 +112,13 @@ menu {
     box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
     z-index: 999;
 }
-menu > ul {
+
+menu>ul {
     list-style-type: none;
     margin: 0;
 }
 
-menu > ul > li > a {
+menu>ul>li>a {
     display: block;
     padding: 10px;
     text-decoration: none;
@@ -119,7 +127,7 @@ menu > ul > li > a {
     border-bottom: 0.5px solid rgba(67, 89, 167, 0.473);
 }
 
-menu ul > li > a:hover {
+menu ul>li>a:hover {
     color: var(--corletra);
     background-color: #35459c;
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
@@ -134,44 +142,52 @@ main {
     height: 100vh;
 }
 
-main > section{
+.about {
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
     width: 80vw;
-
 }
-.about > h1, .about > h2, .about > p {
+
+.aboutTitulo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--cor2);
+    border-radius: 20px 20px 0 0 ;
+    padding: 20px;
     width: 80vw;
-    margin-left: auto;
-    margin-right: auto;
-
 }
-.about > h1{
-    font-size: 24px;
+
+.aboutCont {
+    padding: 20px;
+    border: 4px solid var(--cor2);
+    border-radius: 0 0 20px 20px ;
+}
+
+.aboutTitulo>h1 {
+    font-size: 50px;
     text-align: center;
-    margin-bottom: 0px;
-    background-color: rgba(67, 89, 167, 0.781);
     color: var(--corletra);
     text-shadow: 1px 1px 4px black;
+    margin-bottom: 20px;
 }
-.about > h2{
+
+.aboutTitulo>h2 {
     font-size: 18px;
     text-align: center;
-    margin-top: 0px;
-    margin-bottom: 20px;
-    color: var(--cor2);
+    color: var(--corletra);
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.452);
 }
-.about > p {
+
+.aboutCont>p {
     text-align: justify;
     padding: 10px;
     font-size: 16px;
     text-indent: 25px;
 }
+
 footer {
-    width: 100%;
+    width: 100vw;
     height: 6vh;
     background-color: var(--cor3);
 }
@@ -182,24 +198,32 @@ footer {
     text-align: center;
     color: #e4e2e3;
 }
-@media screen and (min-width: 768px) and (max-width: 992px) { /*TELAS MÉDIAS*/
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+
+    /*TELAS MÉDIAS*/
     header {
         padding: 10px;
-        
+
     }
+
     .logo {
         margin-top: 0px;
         width: 60px;
     }
-    .conteiner_logo > h1 {
+
+    .conteiner_logo>h1 {
         font-size: 25px;
     }
-    .conteiner_logo > h2 {
+
+    .conteiner_logo>h2 {
         font-size: 10px;
     }
+
     #burguer {
         display: none;
     }
+
     menu {
         display: block;
         position: absolute;
@@ -211,49 +235,72 @@ footer {
         background-color: transparent;
         box-shadow: none;
     }
-    menu > ul > li {
+
+    menu>ul>li {
         display: inline-block;
     }
-    menu > ul > li > a{
+
+    menu>ul>li>a {
         border-radius: 6px;
         border: 0px;
     }
+
     .about {
-        top: 40%;
+        flex-direction: column;
+        
     }
-    section.about > h1{
+    .aboutTitulo {
+        border-radius: 20px 20px 0 0;
+        width: 80vw;
+    }
+    
+    .aboutCont {
+        border-radius: 0 0 20px 20px;
+    }
+    .aboutTitulo>h1 {
         font-size: 25px;
     }
-    .about > h2{
+
+    .aboutTitulo>h2 {
         font-size: 20px;
     }
-    .about > p {
+
+    .aboutCont>p {
         font-size: 16px;
         width: 80%;
     }
+
     .login {
         width: 15vw;
     }
 
 }
-@media screen and (min-width: 992px) { /*TELAS GRANDES*/
+
+@media screen and (min-width: 992px) {
+
+    /*TELAS GRANDES*/
     #burguer {
         display: none;
     }
+
     header {
         padding: 10px;
-        
+
     }
+
     .logo {
         margin-top: 0px;
-        width: 60px;
+        width: 30px;
     }
-    .conteiner_logo > h1 {
+
+    .conteiner_logo>h1 {
         font-size: 25px;
     }
-    .conteiner_logo > h2 {
+
+    .conteiner_logo>h2 {
         font-size: 10px;
     }
+
     menu {
         display: block;
         position: absolute;
@@ -265,33 +312,54 @@ footer {
         background-color: transparent;
         box-shadow: none;
     }
-    menu > ul > li {
+
+    menu>ul>li {
         display: inline-block;
     }
-    menu > ul > li > a{
+
+    menu>ul>li>a {
         border-radius: 6px;
         border: 0px;
     }
+
     header {
         padding: 10px;
-        
+
     }
+
     .about {
-        top: 35%;
+        flex-direction: row;
     }
-    section.about > h1{
+    .aboutTitulo {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: var(--cor2);
+        border-radius: 20px 0 0 20px;
+        padding: 20px;
+        width: 60vw;
+    }
+    
+    .aboutCont {
+        padding: 20px;
+        border: 4px solid var(--cor2);
+        border-radius: 0 20px 20px 0;
+    }
+    .aboutTitulo>h1 {
         font-size: 25px;
     }
-    .about > h2{
+
+    .aboutTitulo>h2 {
         font-size: 20px;
     }
-    .about > p {
+
+    .aboutCont>p {
         font-size: 16px;
         width: 80%;
     }
+
     .login {
         width: 15vw;
     }
 
 }
-
