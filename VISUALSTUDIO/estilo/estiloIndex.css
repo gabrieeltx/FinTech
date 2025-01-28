@@ -23,6 +23,7 @@ body {
     align-items: center;
     background-color: var(--corfundobranco);
     height: 100vh;
+    width: 100vw;
 }
 
 header {
@@ -79,11 +80,9 @@ menu {
     right: 20px;
     text-align: right;
     padding: 10px;
-    border-radius: 6px;
     background-color: var(--corfundobranco);
     box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
     z-index: 999;
-    border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 menu>ul {
@@ -110,9 +109,7 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 80vw;
-    height: 60vh;
-    margin: 20px 0 20px 0;
+    margin: auto;
 
 }
 
@@ -121,8 +118,8 @@ main .conteudo {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    width: 60vw;
-    height: 60vh;
+    width: 90vw;
+    height: 50vh;
     padding: 40px;
     background-color: rgb(28, 187, 211);
     border-radius: 8px;
@@ -132,13 +129,13 @@ main .conteudo {
 }
 
 main .conteudo>img#logo {
-    width: 20vw;
+    max-width: 20vw;
 }
 
 main .conteudo>img#nome {
     display: block;
     position: relative;
-    width: 40vw;
+    max-width: 40vw;
     border-bottom: 0.5px solid rgba(67, 89, 167, 0.473);
 
 }
@@ -161,6 +158,7 @@ main .conteudo>p {
     border-radius: 20px;
     width: 100px;
     z-index: 999;
+    margin: 10px;
 }
 
 .entrar a {
@@ -182,7 +180,7 @@ main .conteudo>p {
 .botoes {
     display: flex;
     justify-content: center;
-    margin-top: 20px;
+    margin-top: 40px;
 }
 
 footer {
@@ -215,13 +213,14 @@ footer {
 
     .logo {
         margin-top: 0px;
+        max-width: 20vw;
     }
 
     menu {
-        display: flex;
-        flex-direction: row;
+        display: block;
+        position: absolute;
         text-align: center;
-        
+        top: 86px;
         left: 0px;
         width: 100vw;
         border-radius: 0px;
@@ -231,6 +230,7 @@ footer {
     }
 
     menu>ul>li {
+        display: inline-block;
     }
 
     menu>ul>li>a {
@@ -238,21 +238,20 @@ footer {
         border: 0px;
     }
 
-    .login {
-        width: 15vw;
+    .entrar { 
+        width: 200px;
     }
-
     main {
         height: 100vh;
 
     }
 
     main .conteudo>img#logo {
-        width: 10vw;
+        max-width: 20vw;
     }
 
     main .conteudo>img#nome {
-        width: 20vw;
+        max-width: 30vw;
 
     }
 
@@ -265,6 +264,7 @@ footer {
 @media screen and (min-width: 992px) {
 
     /*TELAS GRANDES*/
+
     #burguer {
         display: none;
     }
@@ -275,21 +275,12 @@ footer {
 
     .logo {
         margin-top: 0px;
-        width: 30%;
+        max-width: 20vw;
     }
 
-    .conteiner_logo>h1 {
-        font-size: 28px;
-        top: 20px;
-    }
-
-    .conteiner_logo>h2 {
-        font-size: 12px;
-        top: 45px;
-    }
-
-    .login {
-        width: 15vw;
+    .entrar { 
+        height: 50px;
+        width: 200px;
     }
 
     .conteiner_logo {
@@ -326,21 +317,49 @@ footer {
     }
 
     main .conteudo {
-        width: 60%;
-        height: 60%;
+        width: 80vw;
+        height: 60vh;
     }
 
     main .conteudo>img#logo {
-        width: 8vw;
+        max-width: 100px;
     }
 
     main .conteudo>img#nome {
-        width: 15vw;
+        max-width: 100px;
 
     }
 
     main .conteudo>p {
         font-size: 22px;
         text-align: center;
+    }
+}
+
+@media (min-width: 2560px) {
+    /*Telas Maiores*/
+    *{
+            font-size: 30px;
+    }
+
+    .logo {
+        max-width: 400px;
+    }
+    main .conteudo>img#logo {
+        
+    }
+
+    main .conteudo>img#nome {
+        
+
+    }
+
+    main .conteudo>p {
+        font-size: 40px;
+        text-align: center;
+    }
+    .entrar { 
+        height: 70px;
+        width: 260px;
     }
 }
