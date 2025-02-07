@@ -41,17 +41,6 @@ header .logo {
     display: block;
     width: 50%
 }
-.conteiner_logo>h1 {
-    color: var(--corletra);
-    font-family: "Belleza";
-    font-size: 20px;
-}
-
-.conteiner_logo>h2 {
-    color: var(--corletra);
-    font-family: "Montserrat";
-    font-size: 8px;
-}
 
 #burguer {
     display: inline-block;
@@ -339,14 +328,14 @@ footer {
 @media (min-width: 2560px) {
     /*Telas Maiores*/
     *{
-            font-size: 30px;
+        font-size: 30px;
     }
 
     .logo {
         max-width: 400px;
     }
     main .conteudo>img#logo {
-        
+        max-width: 100px;
     }
 
     main .conteudo>img#nome {

@@ -14,6 +14,7 @@
     margin: 0px;
     padding: 0px;
     font-family: "Montserrat", serif;
+    font-size: 12px;
     box-sizing: border-box;
 }
 
@@ -21,45 +22,25 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
     background-color: var(--corfundobranco);
-    width: 100vw;
     height: 100vh;
+    width: 100vw;
 }
 
 header {
     display: flex;
     align-items: center;
-    justify-content: space-between;
     width: 100vw;
     height: 100px;
-    background-color: var(--cor1);
+    background-color: #1cbbd3;
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
     padding: 10px;
 
 }
 
 header .logo {
-    width: 10%;
-}
-
-.conteiner_logo {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.conteiner_logo>h1 {
-    color: var(--corletra);
-    font-family: "Belleza";
-    font-size: 20px;
-}
-
-.conteiner_logo>h2 {
-    color: var(--corletra);
-    font-family: "Montserrat";
-    font-size: 8px;
+    display: block;
+    width: 50%
 }
 
 .entrar {
@@ -89,26 +70,32 @@ header .logo {
 
 #burguer {
     display: inline-block;
-    position: absolute;
+    position: fixed;
+    top: 20px;
+    right: 20px;
     text-align: center;
     color: var(--cor2);
     cursor: pointer;
-    padding: 3px;
-    z-index: 999;
+    padding: 10px;
+    font-size: 1.5rem;
+    background-color: var(--corfundobranco);
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+    border-radius: 50%;
+    z-index: 1000;
 }
 
 #burguer:hover {
-    color: var(--cor2);
-    background-color: var(--corfundobranco);
-    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
-    border-radius: 6px;
+    background-color: var(--cor2);
+    color: var(--corfundobranco);
 }
 
 menu {
+    position: fixed;
+    top: 64px;
+    right: 20px;
     text-align: right;
     padding: 10px;
-    border-radius: 6px;
-    background-color: rgba(30, 32, 34, 0.658);
+    background-color: var(--corfundobranco);
     box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
     z-index: 999;
 }
@@ -116,36 +103,35 @@ menu {
 menu>ul {
     list-style-type: none;
     margin: 0;
+    padding: 0;
 }
 
 menu>ul>li>a {
     display: block;
-    padding: 10px;
+    padding: 14px 20px;
     text-decoration: none;
     color: var(--cor2);
-    border-top: 1px solid var(--cordestaque1);
-    border-bottom: 0.5px solid rgba(67, 89, 167, 0.473);
+    font-weight: bold;
+    border-radius: 6px;
 }
 
 menu ul>li>a:hover {
-    color: var(--corletra);
-    background-color: #35459c;
-    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
-    border-radius: 6px;
+    color: var(--corfundobranco);
+    background-color: var(--cor2);
 }
 
 main {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100vw;
-    height: 100vh;
+    margin: auto;
 }
 
 .about {
     display: flex;
     flex-direction: column;
     width: 80vw;
+    margin: 10px;
 }
 
 .aboutTitulo {
@@ -165,7 +151,7 @@ main {
 }
 
 .aboutTitulo>h1 {
-    font-size: 50px;
+    font-size: 30px;
     text-align: center;
     color: var(--corletra);
     text-shadow: 1px 1px 4px black;
@@ -209,15 +195,7 @@ footer {
 
     .logo {
         margin-top: 0px;
-        width: 60px;
-    }
-
-    .conteiner_logo>h1 {
-        font-size: 25px;
-    }
-
-    .conteiner_logo>h2 {
-        font-size: 10px;
+        max-width: 20vw;
     }
 
     #burguer {
@@ -290,17 +268,8 @@ footer {
 
     .logo {
         margin-top: 0px;
-        width: 30px;
+        max-width: 20vw;
     }
-
-    .conteiner_logo>h1 {
-        font-size: 25px;
-    }
-
-    .conteiner_logo>h2 {
-        font-size: 10px;
-    }
-
     menu {
         display: block;
         position: absolute;
@@ -360,6 +329,30 @@ footer {
 
     .login {
         width: 15vw;
+    }
+
+}
+@media (min-width: 2560px) {
+    /*Telas Maiores*/
+    .logo {
+        max-width: 400px;
+    }
+    menu>ul>li>a {
+        
+    }
+    .aboutTitulo>h1 {
+        font-size: 45px;
+    }
+
+    .aboutTitulo>h2 {
+        font-size: 30px;
+    }
+    .aboutCont>h3 {
+        font-size: 30px;
+    }
+    .aboutCont>p {
+        font-size: 25px;
+        width: 80%;
     }
 
 }

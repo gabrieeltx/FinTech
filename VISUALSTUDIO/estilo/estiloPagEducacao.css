@@ -13,70 +13,57 @@
     margin: 0px;
     padding: 0px;
     font-family: "Montserrat", serif;
+    box-sizing: border-box;
 }
-html, body {
-    background-color: rgb(228, 226, 227);
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--corfundobranco);
+    height: 100vh;
+    width: 100vw;
 }
 header {
+    display: flex;
+    align-items: center;
+    width: 100vw;
+    height: 80px;
     background-color: #1cbbd3;
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+    padding: 10px;
 }
-.conteiner_logo {
-    background-color: #1cbbd3;
-    position: relative;
-    height: 60px;
-    transition: width 0.5s, height 0.5s;
 
+header .logo {
+    display: block;
+    width: 50%
 }
-.logo {
-    width: 50px;
-    position: relative;
-    margin-top: 2px;
-    transition: width 0.5s, height 0.5s;
 
-}
-.conteiner_logo > h1 {
-    display: inline-block;
-    position: absolute;
-    top: 12px;
-    color: var(--corletra);
-    font-family: "Belleza";
-    font-size: 20px;
-}
-.conteiner_logo > h2 {
-    display: inline-block;
-    position: absolute;
-    top: 32px;
-    color: var(--corletra);
-    font-family: "Montserrat";
-    font-size: 8px;
-    padding: 0px;
-}
 #conta{
     display: inline-block;
-    position: absolute;
-    top: 10px;
-    right: 10px;
+    position: fixed;
+    top: 20px;
+    right: 20px;
     text-align: center;
-    color: var(--corletra);
+    color: var(--cor2);
     cursor: pointer;
-    padding: 6px;
+    padding: 10px;
+    font-size: 1.5rem;
+    background-color: var(--corfundobranco);
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+    border-radius: 50%;
+    z-index: 1000;
 }
 #conta:hover{
-    color: var(--corletra);
-    background-color: rgba(30, 32, 34, 0.658);
-    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.5);
-    border-radius: 6px;
+    background-color: var(--cor2);
+    color: var(--corfundobranco);
 }
 menu {
-    display: none;
-    position: absolute;
-    top: 50px;
-    right: 10px;
+    position: fixed;
+    top: 64px;
+    right: 20px;
     text-align: right;
     padding: 10px;
-    border-radius: 6px;
-    background-color: rgba(30, 32, 34, 0.658);
+    background-color: var(--corfundobranco);
     box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
     z-index: 999;
 
@@ -84,23 +71,23 @@ menu {
 menu > ul {
     list-style-type: none;
     margin: 0;
+    padding: 0;
     
 }
 
 menu > ul > li > a {
     display: block;
-    padding: 10px;
+    padding: 14px 20px;
     text-decoration: none;
-    color: var(--corletra);
+    color: var(--cor2);
+    font-weight: bold;
     border-radius: 6px;
-    text-shadow: 1px 1px 3px black;
 
 }
 menu ul > li > a:hover {
-    color: var(--corletra);
+    color: var(--corfundobranco);
     background-color: var(--cor2);
-    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
-    border-radius: 6px;
+
 
 }
 main {
@@ -134,12 +121,12 @@ main > h1 {
     text-align: center;
     padding: 20px;
 }
-.rodape {
-    background-color: var(--cor3);
-    bottom: 0px;
-    position: relative;
+footer {
+    position: fixed;
     width: 100%;
     height: 6vh;
+    background-color: var(--cor3);
+    bottom: 0px;
 }
 
 .rodape p {
@@ -195,15 +182,9 @@ main > ul > li:hover {
     }
     .logo {
         margin-top: 0px;
-        width: 60px;
+        max-width: 20vw;
     }
-    .conteiner_logo > h1 {
-        font-size: 25px;
-    }
-    .conteiner_logo > h2 {
-        top: 34px;
-        font-size: 10px;
-    }
+    
     #principal {
         width: 70vw;
     }
@@ -214,20 +195,13 @@ main > ul > li:hover {
 
 @media screen and (min-width: 992px) { /*TELAS GRANDES*/
     header {
-        height: 85px;
+        height: 100px;
     }
     .logo {
         margin-top: 0px;
-        width: 80px;
+        max-width: 18vw;
     }
-    .conteiner_logo > h1 {
-        font-size: 28px;
-        top: 20px;
-    }
-    .conteiner_logo > h2 {
-        font-size: 12px;
-        top: 45px;
-    }
+    
     #principal {
         width: 70vw;
     }
@@ -235,4 +209,22 @@ main > ul > li:hover {
         height: 400px;
         }
     
+}
+
+@media (min-width: 2560px) {
+    /*Telas Maiores*/
+    *{
+        font-size: 30px;
+    }
+    h2{
+        font-size: 40px;
+    }
+    header {
+        height: 120px;
+        
+    }
+
+    .logo {
+        max-width: 400px;
+    }
 }

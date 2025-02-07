@@ -6,39 +6,47 @@
     --cor1: rgba(29, 186, 214, 1);
     --cor2: rgba(67, 88, 167, 1);
     --cor3: rgba(60, 132, 172, 1);
+    --corfundobranco: rgb(228, 226, 227);
     --corletra: rgba(235, 230, 227, 1);
 }
 *{
-    font-family:  "Montserrat", serif;
+    margin: 0px;
+    padding: 0px;
+    font-family: "Montserrat", serif;
+    box-sizing: border-box;
 }
 body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--corfundobranco);
     height: 100vh;
-    background-color: 	#e4e2e3;
+    width: 100vw;
 }
 main {
-    height: 100vh;
-    position: relative; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
 }
 .conteinerLogin {
-    display: block;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 70%;
-    height: 550px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 96vw;
+    height: 60vh;
     padding: 40px;
     text-align: center;
-    background-color: 	#1cbbd3;
-    color: #e4e2e3;
+    background-color: var(--cor1);
+    color: var(--corletra);
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-    border-radius: 6px;    
-    transition: width 0.5s, height 0.5s;
-    transform: translate(-50%, -50%);
+    border-radius: 8px;    
+
 }
 
 .logo {
-    position:relative;
-    width: 100%;
+    max-width: 200px;
     padding-bottom: 10px;
     border-bottom: 0.5px solid rgba(67, 89, 167, 0.473);
     transition: width 0.5s, height 0.5s;
@@ -46,7 +54,8 @@ main {
 }
 a {
     text-decoration: none;
-    color: #d8d5d6;
+    color: var(--corletra);
+    font-weight: bold;
 }
 
 a:hover {
@@ -96,6 +105,7 @@ text-decoration: underline;
 h2#titulo {
     color: var(--corletra);
     padding-bottom: 10px;
+    margin: 20px 0;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.479);
 }
 .link > p{
@@ -103,19 +113,19 @@ h2#titulo {
 }
 
 .rodape {
-    margin-bottom: 0%;
+    margin: 6px;
     color: #007bff;
-    
-}
-
-#rodape {
-    text-align: center;
-    padding-top: 3%;
     font-size: 12px;
 }
 
+#rodape {
+    text-align: center;    
+}
+footer{
+    padding: 2px;
+}
 .checkmark {
-    font-size: 13px;
+    font-size: 15px;
     text-align: justify;
 
 }
@@ -126,14 +136,11 @@ h2#titulo {
 
 
     .conteinerLogin {
-        width: 50vw;
-        height: 550px;
-
+        width: 60vw;
+        height: 60vh;
     }
     .logo {
-        position:relative;
-        width: 80%;
-        padding-bottom: 10px;
+        max-width: 200px;
     }
     .botaoLogin {
         width: 60%;
@@ -155,29 +162,38 @@ h2#titulo {
 }
 
 @media screen and (min-width: 992px) { /*TELAS GRANDES*/
+    *{
+        font-size: 20px;
+    }
     .conteinerLogin{
         width: 40vw;
-        height: 560px;
+        height: 60vh;
 
     } 
     h2#titulo {
-        font-size: 22px;
+        font-size: 30px;
     }
     .logo {
-        width: 80%;
+        max-width: 300px;
     }
-    .botaoLogin {
-        width: 60%;
-        font-size: 15px;
+
+    .checkmark {
+        font-size: 30px;
+        text-align: justify;
+
     }
-    #email, #senha {
-        font-size: 15px;
+    #rodape {
+        font-size: 10px;
     }
-    .link{
-        font-size: 18px;
+}
+@media (min-width: 2560px) {
+    /*Telas Maiores*/
+    *{
+        font-size: 30px;
     }
-    form {
-        display: block;
-        text-align: center;
+
+    .logo {
+        max-width: 500px;
     }
+
 }
